@@ -1,0 +1,42 @@
+Q: What are Channels and Kernels (according to EVA)?
+
+Ans: 
+Channels: Channel is a image represents similar things , as in rgb r is a channel g is a channel and b is a channel,
+in a example of pulav pea is a chanel containing similar things.
+in a music guitor is channel.
+
+Kernal :
+kernals are fature extractors usually kernals are represented as 3X3 mattrix, 
+
+Q: Why should we only (well mostly) use 3x3 Kernels?
+
+Ans: 
+3x3 kernels repeated many times will give us any size we want (odd sized only).
+an even sized is that there is no line of symmetry in even numbers.
+We need to know the central line to create concepts of left and right with a distinguishable central line so we use 3X3 Kernals.
+
+Q: How many times do we need to perform 3x3 convolution operation to reach 1x1 from 199x199 (show calculations)
+
+Ans: we need to perform 99 times to reach 1X1 from 199X199
+
+199X199--> 3X3
+197X197--> 3X3
+195X195--> 3X3
+193X193--> 3X3
+191X191--> 3X3
+189X189--> 3X3
+187X187--> 3X3
+185X185--> 3X3
+183X183--> 3X3
+181X181--> 3X3 -- 179 -->3X3 --> 177 -->3X3 --> 175  -->3X3--> 173 -->3X3 --> 171 -->3X3 --> 169 -->3X3 --> 167
+ -->3X3 --> 165 -->3X3 --> 163 -->3X3 --> 161 -->3X3 --> 159 -->3X3 --> 157 -->3X3 --> 155 -->3X3 --> 153 -->3X3 --> 
+ 151 -->3X3 --> 149 -->3X3 --> 147 -->3X3 --> 145 -->3X3 --> 143 -->3X3 --> 141 -->3X3 --> 139 -->3X3 --> 137 -->3X3 --> 
+ 135 -->3X3 --> 133 -->3X3 --> 131 -->3X3 --> 129 -->3X3 --> 127 -->3X3 --> 125 -->3X3 --> 123 -->3X3 --> 121 -->3X3 --> 
+ 119 -->3X3 --> 117 -->3X3 --> 115 -->3X3 --> 113 -->3X3 --> 111 -->3X3 --> 109 -->3X3 --> 105 -->3X3 --> 103 -->3X3 --> 
+ 101 -->3X3 --> 99 -->3X3 --> 97 -->3X3 --> 95 -->3X3 --> 93 -->3X3 --> 91 -->3X3 --> 89 -->3X3 --> 87 -->3X3 --> 85 -->3X3 --> 
+ 83 -->3X3 --> 81 -->3X3 --> 79 -->3X3 --> 77 -->3X3 --> 75 -->3X3 --> 73 -->3X3 --> 71 -->3X3 --> 69 -->3X3 --> 67 -->3X3 --> 
+ 65 -->3X3 --> 63 -->3X3 --> 61 -->3X3 --> 59 -->3X3 --> 55 -->3X3 --> 53 -->3X3 --> 51 -->3X3 --> 49 -->3X3 --> 47 -->3X3 --> 45
+  -->3X3 --> 43 -->3X3 --> 41 -->3X3 --> 39 -->3X3 --> 37 -->3X3 --> 35 -->3X3 --> 33 -->3X3 --> 31 -->3X3 --> 29 -->3X3 --> 27
+  -->3X3 --> 25 -->3X3 --> 23 -->3X3 --> 21 -->3X3 --> 19 -->3X3 --> 17 -->3X3 --> 15 -->3X3 --> 13 -->3X3 --> 11
+   -->3X3 --> 9 -->3X3 --> 7 -->3X3 --> 5 -->3X3 --> 3 -->3X3 --> 1
+  
