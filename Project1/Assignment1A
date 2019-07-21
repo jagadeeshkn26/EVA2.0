@@ -1,1 +1,23 @@
+Horizontal Edge Detector --> 
+
+                             kernel = np.float32([[1,1,1],[0, 0, 0],[-1,-1,-1]])
+                             above code is used to detected Horizontal Edges.
+
+45 Degree Angle Detector (either) --> 
+
+                            kernel = np.float32([[-1,-1,2],[-1,2,-1],[2,-1,-1]])
+                            Above code is used to detect the 45 degree angle detector
+
+Blur Kernel  -->
+                        dst = cv2.blur(image,(5,5))
+                        Above code is used to blur the image.
+
+Sharpen Kernel -->
+                        kernel = np.float32([[0, -1, 0],[-1, 5, -1],[0, -1, 0]])
+                         Above code is used to Sharpen Kernel.
+
+Identity function (doesn't do anything) -->
+                        kernel = np.float32([[0, 0, 0],[0, 1, 0],[0, 0, 0]])
+                        Above code is used to Identity function
+
 
